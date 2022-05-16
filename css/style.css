@@ -17,9 +17,14 @@ body {
     background-color: pink;
 }
 
+
 a {
     text-decoration: none;
     display: inline-block;
+}
+
+ul {
+    list-style-type: none;
 }
 /* MAIN */
 main {
@@ -30,10 +35,58 @@ main {
 }
 /* LEFT-NAV */
 .left-nav {
-    background-color: lightcoral;
+    background-color: black;
     width: 250px; 
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: auto;
 }
+.left-nav span {
+    font-size: 14px;
+}
+.img-nav {
+    width: 1.7rem;
+}
+.left-nav a {
+    color: #959595;
+}
+.vert-middle {
+    vertical-align: middle;
+}
+.left-nav img {
+
+}
+/* logo */
+.logo {
+    width: 8.5rem;
+}
+/* playlist */
+.left-nav h4 {
+    color: white;
+}
+.plus-square {
+    font-size: 30px;
+    background-color: #959595;
+    padding: 0 10px;
+    color: black;
+    display: inline-block;
+}
+/* download */
+.img-download {
+    width: 1rem;
+}
+/* separation-line */
+.separation-line {
+    border: 1px solid #959595;
+    background-color: #959595;
+    width: 80%;
+}
+/* profile */
+.profile-img {
+    width: 22px;
+    background-color: #959595;
+    border-radius: 50%;
+}
+
 /* MAIN-CONTENT */
 .main-content {
     background-color: lightsalmon;
