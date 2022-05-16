@@ -1,0 +1,12 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESKTOP FIRST */
+/* COMMON */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
