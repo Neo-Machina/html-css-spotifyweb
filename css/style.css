@@ -17,6 +17,10 @@ body {
     background-color: pink;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
 /* MAIN */
 main {
     background-color: lightblue;
@@ -48,10 +52,22 @@ footer {
 .upgrade-banner {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     height: 80px;
     position: fixed;
     top: 0;
     right: 0;
     width: calc( 100% - 250px );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+.upgrade-banner a {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin: 0 25px;
+}
+
