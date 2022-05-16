@@ -17,7 +17,6 @@ body {
     background-color: pink;
 }
 
-
 a {
     text-decoration: none;
     display: inline-block;
@@ -37,38 +36,98 @@ main {
 .left-nav {
     background-color: black;
     width: 250px; 
-    /* overflow: hidden; */
-    overflow-y: auto;
+    overflow: hidden;
+    padding: 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
 }
 .left-nav span {
     font-size: 14px;
 }
+.pad-right{
+    padding-left: 1rem;
+}
 .img-nav {
     width: 1.7rem;
 }
+.left-nav a img:not(.profile-img) {
+    filter: invert(66%) sepia(0%) saturate(3709%) hue-rotate(109deg) brightness(94%) contrast(79%);
+}
+/* img-nav hover */
+.left-nav a:hover img:not(.profile-img) {
+    filter: invert(100%) sepia(35%) saturate(265%) hue-rotate(342deg) brightness(109%) contrast(106%);
+}
+
 .left-nav a {
     color: #959595;
 }
 .vert-middle {
     vertical-align: middle;
 }
-.left-nav img {
-
-}
 /* logo */
 .logo {
     width: 8.5rem;
+    margin-bottom: 1.5rem;
 }
-/* playlist */
-.left-nav h4 {
+.logo-small {
+    display: none;
+}
+/* navigation */
+.navigation-height{
+    line-height: 2.3;
+}
+.border-green {
+    border-left: 2px solid #adff2f;
+}
+.border-green span {
     color: white;
 }
+/* hover navigation */
+.left-nav a:hover {
+    color: white;
+}
+
+/* playlist */
+.playlist-section {
+    flex-grow: 1;
+}
+.left-nav h4 {
+    color: white;
+    margin: 1.5rem 0 0.5rem;
+}
+.playlist-item {
+    height: calc( 100% - 83.6px );
+}
+.playlist-height li {
+    line-height: 2.3;
+}
+.playlist-height {
+    overflow-y: auto;
+    height: 100%;
+}
+.flex-plus {
+    display: flex;
+    align-items: center;
+}
+.flex-plus :nth-child(2) {
+    font-size: 16px;
+}
 .plus-square {
-    font-size: 30px;
+    width: 30px;
+    height: 30px;
     background-color: #959595;
-    padding: 0 10px;
     color: black;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+.plus-square span {
+    font-size: 2rem;
+}
+/* hover playlist */
+.flex-plus:hover .plus-square {
+    background-color: white;
 }
 /* download */
 .img-download {
@@ -79,12 +138,17 @@ main {
     border: 1px solid #959595;
     background-color: #959595;
     width: 80%;
+    margin: 0.5rem 0;
 }
 /* profile */
 .profile-img {
     width: 22px;
     background-color: #959595;
     border-radius: 50%;
+}
+.profile-white {
+    color: white;
+    font-weight: bold;
 }
 
 /* MAIN-CONTENT */
@@ -124,3 +188,42 @@ footer {
     margin: 0 25px;
 }
 
+/* spotify xs*/
+@media screen and (max-width: 600px) {
+    /* LEFT-NAV */
+    .left-nav {
+        width: 50px;
+        justify-content: space-between;
+    }
+    .big-logo {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+        width: 2rem;
+        margin: 0 auto;
+    }
+    .desktop-label {
+        display: none;
+    }
+    .border-green {
+        border: 0;
+    }
+    .pad-right {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .navigation-height {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    /* MAIN-CONTENT */
+    .main-content {
+        width: calc( 100% - 50px );
+    }
+    /* UPGRADE-BANNER */
+    .upgrade-banner {
+        width: calc( 100% - 50px );
+    }
+}
