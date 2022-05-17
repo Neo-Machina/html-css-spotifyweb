@@ -25,6 +25,11 @@ a {
 ul {
     list-style-type: none;
 }
+
+img {
+    width: 100%;
+}
+
 /* MAIN */
 main {
     background-color: lightblue;
@@ -32,6 +37,7 @@ main {
     height: calc( 100% - 100px);
     display: flex;
 }
+
 /* LEFT-NAV */
 .left-nav {
     background-color: black;
@@ -153,7 +159,44 @@ main {
     background-color: lightsalmon;
     width: calc( 100% - 250px );
     overflow-y: auto;
+    padding-top: 100px;
 }
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+/* recently played */
+.list-item-flex {
+    display: flex;
+    justify-content: center;
+    background-color: violet;  
+    margin-bottom: 2rem;
+}
+.list-item-flex li {
+    padding: 0 5px;
+    font-size: 12px;
+    color: #959595;
+    font-weight: bold;
+}
+.border-bt-green {
+    border-bottom: 2px solid #a5f32d;
+    margin: 0 25px;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    width: calc( (100% / 6) - 10px );
+}
+/* created-for */
+.columns-created-for {
+    display: flex;
+    margin-right: 10px;
+}
+
+
+
 
 /* FOOTER */
 footer {
@@ -188,7 +231,24 @@ footer {
 .upgrade-banner a:hover {
     transform: scale(1.2);
 }
+/* spotify md */
+@media screen and (max-width: 1100px) {
+    /* list-item */
+    .list-item-flex {
+        flex-wrap: wrap;
+    }
+    /* columns */
+    .columns {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc( (100% / 4) -10px );
+    }
+}
+/* spotify s */
+@media screen and (max-width: 700px) {
 
+}
 /* spotify xs*/
 @media screen and (max-width: 600px) {
     /* LEFT-NAV */
