@@ -44,7 +44,7 @@ main {
 .left-nav span {
     font-size: 14px;
 }
-.pad-right{
+.padd{
     padding-left: 1rem;
 }
 .img-nav {
@@ -61,6 +61,10 @@ main {
 .left-nav a {
     color: #959595;
 }
+/* hover left-nav a */
+.left-nav a:hover {
+    color: white;
+}
 .vert-middle {
     vertical-align: middle;
 }
@@ -69,7 +73,7 @@ main {
     width: 8.5rem;
     margin-bottom: 1.5rem;
 }
-.logo-small {
+.small-logo {
     display: none;
 }
 /* navigation */
@@ -80,10 +84,6 @@ main {
     border-left: 2px solid #adff2f;
 }
 .border-green span {
-    color: white;
-}
-/* hover navigation */
-.left-nav a:hover {
     color: white;
 }
 
@@ -191,34 +191,41 @@ footer {
     .left-nav {
         width: 50px;
         justify-content: space-between;
-    }
-    .big-logo {
-        display: none;
-    }
-    .logo-small {
-        display: block;
-        width: 2rem;
-        margin: 0 auto;
+        padding: 0.2rem 0 0.5rem;
     }
     .desktop-label {
         display: none;
     }
+    .flex-600 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .padd {
+        padding: 0;
+    }
+    /* navigation */
+    .big-logo {
+        display: none;
+    }
+    .small-logo {
+        display: block;
+        width: 2rem;
+        padding-bottom: 10px;
+    }
     .border-green {
         border: 0;
     }
-    .pad-right {
-        padding: 0;
-        margin: 0 auto;
-    }
-    .navigation-height {
-        display: inline-block;
-        margin: 0 auto;
+    /* profile */
+    .profile-img {
+        margin-top: 1rem;
     }
     
     /* MAIN-CONTENT */
     .main-content {
         width: calc( 100% - 50px );
     }
+
     /* UPGRADE-BANNER */
     .upgrade-banner {
         width: calc( 100% - 50px );
