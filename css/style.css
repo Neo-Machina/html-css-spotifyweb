@@ -184,6 +184,10 @@ footer {
     border-radius: 20px;
     margin: 0 25px;
 }
+/* hover upgrader-banner */
+.upgrade-banner a:hover {
+    transform: scale(1.2);
+}
 
 /* spotify xs*/
 @media screen and (max-width: 600px) {
