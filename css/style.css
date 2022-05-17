@@ -95,15 +95,12 @@ main {
     color: white;
     margin: 1.5rem 0 0.5rem;
 }
-.playlist-item {
-    height: calc( 100% - 83.6px );
+.playlist-height {
+    overflow-y: auto;
+    height: 70%;
 }
 .playlist-height li {
     line-height: 2.3;
-}
-.playlist-height {
-    overflow-y: auto;
-    height: 100%;
 }
 .flex-plus {
     display: flex;
