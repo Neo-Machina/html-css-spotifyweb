@@ -301,7 +301,7 @@ footer {
 }
 /* play-section */
 .container-play {
-    width: 40%;
+    width: 37%;
     padding-bottom: 23px;
 }
 .play-item-list {
@@ -324,9 +324,10 @@ footer {
     padding: 0 25px;
 }
 .time-line {
-    width: 70%;
+    width: 75%;
     background-color: #5a5a5a;
     border-radius: 2px;
+    position: relative;
 }
 .small-timeline {
     width: 19%;
@@ -339,8 +340,18 @@ footer {
     border-color: #a5f32d;
     background-color: #a5f32d;
 }
-.curson {
-    
+.cursor {
+    display: none;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+}
+/* hover cursor */
+.time-line:hover .cursor, .volume-line:hover .cursor {
+    display: inline-block;
 }
 /* volume-section */
 .vol-list-item li:not(:last-child) {
@@ -348,9 +359,10 @@ footer {
     font-size: 14px;
 }
 .volume-line {
-    width: 120px;
+    width: 110px;
     background-color: #5a5a5a;
     border-radius: 2px;
+    position: relative;
 }
 .small-vol-line {
     width: 25%;
@@ -358,7 +370,9 @@ footer {
     background-color: #c1c1c1;
     border-radius: 2px;
 }
-
+.cursor-vol {
+    left: 25%;
+}
 
 /* UPGRADE-BANNER */
 .upgrade-banner {
@@ -386,8 +400,10 @@ footer {
 .upgrade-banner a:hover {
     transform: scale(1.2);
 }
+
 /* spotify md */
 @media screen and (max-width: 1100px) {
+    /* MAIN CONTENT */
     /* list-item */
     .small-container {
         max-width: 600px;
@@ -406,6 +422,7 @@ footer {
 }
 /* spotify s */
 @media screen and (max-width: 700px) {
+    /* MAIN CONTENT */
     /* list-item */
     .small-container {
         max-width: 400px;
@@ -414,6 +431,10 @@ footer {
     /* columns */
     .col {
         width: calc( (100% / 2) - 1rem );
+    }
+    /* volume-section */
+    .volume-line {
+        width: 100px;
     }
 }
 /* spotify xs*/
@@ -460,6 +481,10 @@ footer {
     .small-container {
         max-width: 500px;
         margin: 0 auto;
+    }
+    /* volume-section */
+    .volume-line {
+        width: 90px;
     }
 
     /* UPGRADE-BANNER */
