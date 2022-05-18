@@ -304,8 +304,9 @@ footer {
 }
 /* play-section */
 .container-play {
-    width: 37%;
+    width: 100%;
     padding-bottom: 23px;
+    max-width: 500px;
 }
 .play-item-list {
     margin-bottom: 7px;
@@ -445,9 +446,16 @@ footer {
     .item-flex {
         flex-direction: column;
     }
+    /* play-section */
+    .container-play {
+        padding: 0 10px;
+    }
+    .time-song {
+        padding: 0px 20px;
+    }
     /* volume-section */
     .volume-line {
-        width: 100px;
+        width: 80px;
     }
 }
 /* spotify xs*/
@@ -502,9 +510,16 @@ footer {
     .sinister-img {
         width: 30px;
     }
+    /* play-section */
+    .container-play {
+        padding: 0 30px;
+    }
+    .time-song {
+        padding: 0px 11px;
+    }
     /* volume-section */
     .volume-line {
-        width: 90px;
+        width: 70px;
     }
 
     /* UPGRADE-BANNER */
