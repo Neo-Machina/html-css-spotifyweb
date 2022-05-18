@@ -269,10 +269,10 @@ footer {
 }
 /* song-section */
 .sinister-img {
-    width: 40px;
+    width: 45px;
 }
 .song-name {
-
+    padding-right: 40px;
 }
 .song-name div:first-child {
     font-size: 13px;
@@ -284,6 +284,9 @@ footer {
 }
 .item-flex {
     display: flex;
+}
+.item-flex span:first-child {
+    padding-right: 15px;
 }
 /* hover-underline */
 .song-name div:last-child:hover {
@@ -432,6 +435,16 @@ footer {
     .col {
         width: calc( (100% / 2) - 1rem );
     }
+    /* song-section */
+    .song-name {
+        padding-right: 30px;
+    }
+    .sinister-img {
+        width: 35px;
+    }
+    .item-flex {
+        flex-direction: column;
+    }
     /* volume-section */
     .volume-line {
         width: 100px;
@@ -481,6 +494,13 @@ footer {
     .small-container {
         max-width: 500px;
         margin: 0 auto;
+    }
+    /* song-section */
+    .song-name {
+        padding-right: 4px;
+    }
+    .sinister-img {
+        width: 30px;
     }
     /* volume-section */
     .volume-line {
